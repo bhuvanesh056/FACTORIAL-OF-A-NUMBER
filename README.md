@@ -1,4 +1,8 @@
 # FACTORIAL-OF-A-NUMBER
+# FACTORIAL OF A NUMBER USING 8051 (Keil)
+
+## AIM
+To write and execute an Assembly language program to perform the factorial of a number using 8051 Keil.
 
 ---
 
@@ -8,16 +12,16 @@
 ---
 
 ## ALGORITHM
-1. *Start*
-2. *Input*: Read the number n.
-3. *Initialize*:
-   - Set factorial to 1.
-   - Set i to 1.
-4. *Loop*: While i is less than or equal to n:
-   - Multiply factorial by i.
-   - Increment i by 1.
-5. *Output*: Store or print the value of factorial.
-6. *End*
+1. **Start**
+2. **Input**: Read the number `n`.
+3. **Initialize**:
+   - Set factorial to `1`.
+   - Set `i` to `1`.
+4. **Loop**: While `i` is less than or equal to `n`:
+   - Multiply factorial by `i`.
+   - Increment `i` by `1`.
+5. **Output**: Store or print the value of factorial.
+6. **End**
 
 ---
 
@@ -28,8 +32,8 @@
 ---
 
 ## PROGRAM
-
-ORG 000H
+```asm
+ORG 0000H
 MOV DPTR,#4500H
 MOVX A,@DPTR
 MOV R0,A
@@ -47,21 +51,23 @@ THICK: RET
 THIN:RET
 END
 
+```
+OUTPUT
 
-
-## OUTPUT
-<img width="1919" height="1079" alt="Screenshot 2025-09-24 084743" src="https://github.com/user-attachments/assets/32bbf33a-b3db-458b-adf9-f25fdf98820d" />
+<img width="1269" height="615" alt="Screenshot 2025-09-25 100700" src="https://github.com/user-attachments/assets/6ecfa73c-ad37-4b3c-ad70-c58cd80e66de" />
 
 
 ---
+MANUAL CALCULATIONS
 
-## MANUAL CALCULATIONS
-![105f2a45-76cc-46d9-9749-97cb66be68ab](https://github.com/user-attachments/assets/dfa4f6d0-f734-4aef-b323-a5a7d2a03e66)
+<img width="591" height="454" alt="image" src="https://github.com/user-attachments/assets/17971e6b-5524-4075-8d46-773f5f461324" />
 
 ---
 
-## RESULT
+RESULT
 
 Thus, the factorial of a number was calculated and executed successfully using 8051 Keil.
 
 ---
+
+
